@@ -4,14 +4,14 @@ from setuptools import setup
 def _get_description():
     try:
         path = os.path.join(os.path.dirname(__file__), 'README.md')
-        with open(path, encoding='utf-8') as f:
+        with open(path) as f:
             return f.read()
     except IOError:
         return ''
 
 setup(
     name='geojson-rewind',
-    version='0.1.1',
+    version='0.1.1+py2.jnm',
     author="chris48s",
     license="MIT",
     description='A Python library for enforcing polygon ring winding order in GeoJSON',
